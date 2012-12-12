@@ -219,6 +219,8 @@ PRODUCT_PACKAGES += \
 	conn_init \
 	charger_touch
 
+PRODUCT_PACKAGES += Trebuchet
+
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	rild.libpath=/system/lib/libril-qc-qmi-1.so
 
