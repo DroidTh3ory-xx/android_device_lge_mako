@@ -179,6 +179,10 @@ PRODUCT_PACKAGES += \
 	libaudio-resampler
 
 PRODUCT_PACKAGES += \
+        Superuser \
+        su
+
+PRODUCT_PACKAGES += \
 	hci_qcomm_init
 
 PRODUCT_PACKAGES += \
@@ -219,7 +223,6 @@ PRODUCT_PACKAGES += \
 	conn_init \
 	charger_touch
 
-PRODUCT_PACKAGES += Trebuchet
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	rild.libpath=/system/lib/libril-qc-qmi-1.so
