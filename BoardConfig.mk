@@ -101,3 +101,7 @@ BOARD_HAVE_LOW_LATENCY_AUDIO := true
 -include vendor/lge/mako/BoardConfigVendor.mk
 
 BOARD_HAS_NO_SELECT_BUTTON := true
+
+# adb has root
+ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
+ADDITIONAL_DEFAULT_PROPERTIES += ro.allow.mock.location=1
