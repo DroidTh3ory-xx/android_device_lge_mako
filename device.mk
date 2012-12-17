@@ -219,6 +219,9 @@ PRODUCT_PACKAGES += \
 	conn_init \
 	charger_touch
 
+PRODUCT_PACKAGES += \
+	Torch
+
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	rild.libpath=/system/lib/libril-qc-qmi-1.so
