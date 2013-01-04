@@ -151,7 +151,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.telephony.call_ring.multiple=0
 
 #Upto 3 layers can go through overlays
-PRODUCT_PROPERTY_OVERRIDES += debug.mdpcomp.maxlayer=3
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.mdpcomp.maxlayer=3 \
+    debug.composition.type=gpu
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
