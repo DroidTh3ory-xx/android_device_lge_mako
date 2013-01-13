@@ -42,6 +42,8 @@ PRODUCT_PACKAGES += \
         VisualizationWallpapers \
         librs_jni
 
+LOCAL_KERNEL := device/lge/mako-kernel
+
 PRODUCT_COPY_FILES += \
 	device/lge/mako/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
 	device/lge/mako/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
@@ -239,7 +241,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	wifi.interface=wlan0 \
-	wifi.supplicant_scan_interval=15
+	wifi.supplicant_scan_interval=150
 
 # Enable AAC 5.1 output
 PRODUCT_PROPERTY_OVERRIDES += \
