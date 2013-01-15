@@ -31,6 +31,9 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=mako lpj=
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 TARGET_USE_PREBUILT_KERNEL := true
 
+# Comment this to use kernel source
+TARGET_KERNEL_SOURCE := kernel/lge/mako-franco
+TARGET_KERNEL_CONFIG := mako_defconfig
 
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_FLUENCE_INCALL := true
